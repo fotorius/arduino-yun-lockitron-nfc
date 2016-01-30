@@ -2,10 +2,9 @@ Author:   Alfredo Rius
 License:  BSD(LICENSE)
 
     This is an implementation of the NFC breakout for the PN532 from Adafruit
-    and the Lockitron platform to allow access to doors. With web app. This
+    and the Lockitron platform to allow access to doors and web app. This
     project is related to a previous project arduino-yun-lockitron located in
-    https://github.com/devalfrz/arduino-yun-lockitron where you can find the
-    configuration of the web server under the www directory.
+    https://github.com/devalfrz/arduino-yun-lockitron.
 
     This program is based on the arduino-lockitron-nfc shield located (Eagle
     files in https://github.com/devalfrz/arduino-lockitron-nfc).
