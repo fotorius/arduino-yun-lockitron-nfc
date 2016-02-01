@@ -131,7 +131,6 @@ void setup(void) {
 void loop(void) {
   uint8_t success;
   uint8_t uid[] = { 0, 0, 0, 0, 0, 0, 0 };  // Buffer to store the returned UID
-  int tmp_addr;
   uint8_t uidLength;    // Length of the UID (4 or 7 bytes depending on ISO14443A card type)
   int i,j;
   boolean save_delete = 0;
@@ -230,10 +229,10 @@ void loop(void) {
   }
 
 
-  if(!digitalRead(LOCK_UNLOCK)){// Select slot
+  if(!digitalRead(LOCK_UNLOCK)){// Unlock or lock door
     state = lock(!state);
   }
-  if(!digitalRead(RESET_MEMORY)){// Select slot
+  if(!digitalRead(RESET_MEMORY)){// Swipe memory
     digitalWrite(STATUS_LED,HIGH);
     delay(5000);
     digitalWrite(STATUS_LED,LOW);
